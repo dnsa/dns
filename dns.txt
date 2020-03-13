@@ -1,0 +1,49 @@
+do-release-upgrade
+wget -O install.sh https://raw.githubusercontent.com/dnsa/dns/master/install.sh;wget -O gravity.db.sql https://raw.githubusercontent.com/dnsa/dns/master/gravity.db.sql;wget -O etc.hosts.sh https://raw.githubusercontent.com/dnsa/dns/master/etc.hosts.sh;wget -O update.sh https://raw.githubusercontent.com/dnsa/dns/master/update.sh;grep -Rl aaaaaa|xargs sed -i s/aaaaaa/xxx.xxx.xxx/g;grep -Rl bbbbbb|xargs sed -i 's/bbbbbb/xxx\\.xxx\\.xxx/g';grep -Rl cccccc|xargs sed -i s/cccccc/xxxxxx/g;bash install.sh
+-----
+PowerShell
+Install-WindowsFeature DNS;Add-DnsServerForwarder x.x.x.x;Add-DnsServerForwarder x.x.x.x;Invoke-WebRequest https://link-ip.nextdns.io/xxx/xxx
+-----
+#Activate iPhone
+albert.apple.com
+#Sign in Apple ID
+gsa.apple.com
+#Sign in App Store
+^gsa\.apple\.com$|^(bag|play|buy|p[0-9]{1,2}-buy)\.itunes\.apple\.com$|^s\.mzstatic\.com$
+gsa.apple.com
+bag.itunes.apple.com
+s.mzstatic.com
+play.itunes.apple.com
+buy.itunes.apple.com
+p71-buy.itunes.apple.com
+#App Store API
+sf-api-token-service.itunes.apple.com
+#App Store
+^(bag|init|iosapps|su)\.itunes\.apple\.com$|^(apps|is[0-9]-ssl)\.mzstatic\.com$|^amp-api-search-edge\.apps\.apple\.com$
+bag.itunes.apple.com
+apps.mzstatic.com
+amp-api-search-edge.apps.apple.com
+is1-ssl.mzstatic.com
+is5-ssl.mzstatic.com
+init.itunes.apple.com
+iosapps.itunes.apple.com
+su.itunes.apple.com
+#Activate iMessage+FaceTime
+^gsa\.apple\.com$|^(init|[0-9]{1,3}-courier)\.push\.apple\.com$|^(init|profile|static|identity)\.ess\.apple\.com$|^setup\.icloud\.com$
+gsa.apple.com
+init.push.apple.com
+init.ess.apple.com
+0-courier.push.apple.com
+120-courier.push.apple.com
+setup.icloud.com
+profile.ess.apple.com
+static.ess.apple.com
+identity.ess.apple.com
+#iMessage
+^(init|[0-9]{1,3}-courier)\.push\.apple\.com$|^gateway-asset\.icloud-content\.com$|^edge-[0-9]{3}\.hkhkg\.icloud-content\.com$
+init.push.apple.com
+0-courier.push.apple.com
+120-courier.push.apple.com
+gateway-asset.icloud-content.com
+edge-001.hkhkg.icloud-content.com
+edge-500.hkhkg.icloud-content.com
