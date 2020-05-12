@@ -1,9 +1,8 @@
-INSERT INTO"adlist"(id,address)VALUES(0,'https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt');
-INSERT INTO"domainlist"(id,type,domain)VALUES(0,3,'.');
-INSERT INTO"domainlist"(id,type,domain)VALUES(1,3,'apple|icloud|ocsp|appkonthai');
-INSERT INTO"domainlist"(id,type,domain)VALUES(3,2,'^bbbbbb$|^www\.duckdns\.org$');
-INSERT INTO"domainlist"(id,type,domain)VALUES(5,2,'^(bag|init|iosapps|su)\.itunes\.apple\.com$|^(apps|is[0-9]-ssl)\.mzstatic\.com$|^amp-api-search-edge\.apps\.apple\.com$');
-INSERT INTO"domainlist"(id,type,domain)VALUES(6,2,'^(init|[0-9]{1,3}-courier)\.push\.apple\.com$|^gateway-asset\.icloud-content\.com$|^edge-[0-9]{3}\.(hkhkg|sgsin)\.icloud-content\.com$');
-INSERT INTO"domainlist"(id,type,domain)VALUES(8,0,'app.timo.vn');
-INSERT INTO"domainlist"(id,type,domain)VALUES(9,2,'^tinhte\.vn$|^photo[0-9]\.tinhte\.vn$');
-INSERT INTO"domainlist"(id,type,domain)VALUES(10,2,'^m\.baomoi\.com$|^(baomoi-static|photo-[0-9]-baomoi)\.zadn\.vn$');
+insert into"group"(id,name)values(1,'dnsb');
+insert into adlist(id,address)values(0,'https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt');
+insert into adlist_by_group(adlist_id,group_id)values(0,1);
+insert into client(id,ip)values(0,'xxx');
+delete from client_by_group;
+insert into client_by_group(client_id,group_id)values(0,1);
+insert into domainlist(id,type,domain)values(0,3,'.');
+insert into domainlist(id,type,domain)values(1,3,'apple|icloud|ocsp|appkonthai');
